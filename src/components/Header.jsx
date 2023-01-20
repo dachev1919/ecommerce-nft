@@ -1,6 +1,7 @@
 import styles from "../styles/components/Header.module.css";
 import { Container } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
+import { useEffect, useRef } from "react";
 
 const NAV__LINKS = [
     {
@@ -22,11 +23,27 @@ const NAV__LINKS = [
 ];
 
 const Header = () => {
+    const headerRef = useRef();
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+           if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+               headerRef.current.classList.add(styles['header__shrink']);
+           } else {
+               headerRef.current.classList.remove(styles['header__shrink']);
+           }
+        });
+
+        return () => {
+            window.removeEventListener('scroll', () => {})
+        };
+    }, []);
+
     return (
-        <header className={ styles.header }>
+        <header ref={ headerRef } className={ styles.header }>
             <Container>
                 <div className={ styles.nav }>
-                    <div className='logo'>
+                    <div className="logo">
                         <Link to="/ecommerce-nft/">
                             <h2 className="d-flex gap-2 align-items-center">
                             <span>
@@ -40,9 +57,10 @@ const Header = () => {
                         <ul className={ styles["nav__list"] }>
                             {
                                 NAV__LINKS.map((link, index) => (
-                                    <li key={index} className={ styles["nav__item"] }>
+                                    <li key={ index } className={ styles["nav__item"] }>
                                         <NavLink to={ link.path }
-                                                 className={ ({ isActive }) => isActive ? styles.active : "" } end>{ link.display }</NavLink>
+                                                 className={ ({ isActive }) => isActive ? styles.active : "" }
+                                                 end>{ link.display }</NavLink>
                                     </li>
                                 ))
                             }

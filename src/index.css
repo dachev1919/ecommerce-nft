@@ -11,17 +11,18 @@
 
 ::-webkit-scrollbar {
     width: 8px;
-    background-color: #fff;
-    border-color: #b2b2b2;
+    background: #343444;
+    border-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
     width: 6px;
-    background-color: #3a3a3a;
+    border-radius: 5px;
+    background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6);
 }
 ::-webkit-scrollbar-track {
-    border-color: #b2b2b2;
-    background-color: #fff;
+    border-color: transparent;
+    background-color: var(--background-color);
 }
 
 /* reset default style */
@@ -65,12 +66,12 @@ p {
 
 a {
     text-decoration: none;
-    color: unset;
+    color: var(--primary-color);
     transition: all .3s ease;
 }
 
 a:hover {
-    color: inherit;
+    color: var(--secondary-color);
 }
 
 ul {
@@ -137,21 +138,6 @@ section {
     display: flex;
 }
 
-.btn i {
-    margin-left: .5rem;
-    transition: all .3s ease;
-    position: relative;
-    top: -1px;
-}
-
-.btn.with-icon:hover {
-    padding-right: .8rem;
-}
-
-.btn.with-icon:hover i {
-    margin-left: 1rem;
-}
-
 .btn.btn__primary {
     background: transparent;
     color: #fff;
@@ -185,14 +171,6 @@ section {
 
     .btn:not(.without__responsive) i {
         margin-left: calc(.1rem + (.5 - .1) * ((100vw - 20rem) / (120 - 20)));
-    }
-
-    .btn:not(.without__responsive).with-icon:hover {
-        padding-right: calc(.5rem + (.8 - .5) * ((100vw - 20rem) / (120 - 20)));
-    }
-
-    .btn:not(.without__responsive).with-icon:hover i {
-        margin-left: calc(0.2rem + (1 - 0.2) * ((100vw - 20rem) / (120 - 20)));
     }
 }
 /*END duplicate classes*/

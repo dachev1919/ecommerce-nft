@@ -7,6 +7,13 @@
     left: 0;
     z-index: 99999;
     padding: .5rem 0;
+    background: transparent;
+    transition: all .3s ease;
+}
+
+.header__shrink {
+    background: var(--background-color);
+    box-shadow: 3px 3px 10px -3px rgba(226, 80, 229, .1);
 }
 
 .nav {

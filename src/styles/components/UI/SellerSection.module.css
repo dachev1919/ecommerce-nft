@@ -1,0 +1,17 @@
+.seller-section {}
+
+.seller-section__title {}
+
+.single-seller__card {}
+
+.single-seller__image {
+    width: 5rem;
+    height: 5rem;
+}
+
+.single-seller__content h6 {
+    font-size: 1rem;
+
+}
+
+.single-seller__content {}

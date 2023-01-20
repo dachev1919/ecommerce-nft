@@ -19,10 +19,10 @@ const HeroSection = () => {
                             </p>
                             <div className="d-flex align-items-center gap-4 mt-5">
                                 <Link to="/ecommerce-nft/market">
-                                    <button className="btn btn__primary"><i className="ri-rocket-line"/>Explore</button>
+                                    <button className="btn btn__primary without__responsive"><i className="ri-rocket-line"/>Explore</button>
                                 </Link>
                                 <Link to="/ecommerce-nft/market">
-                                    <button className="btn btn__primary"><i className="ri-ball-pen-line"/>Explore
+                                    <button className="btn btn__primary without__responsive"><i className="ri-ball-pen-line"/>Explore
                                     </button>
                                 </Link>
                             </div>

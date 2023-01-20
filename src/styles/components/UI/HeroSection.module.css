@@ -1,4 +1,6 @@
-.hero-section {}
+.hero-section {
+    margin-top: 60px;
+}
 
 .hero-section__content h2 {
     line-height: 150%;
