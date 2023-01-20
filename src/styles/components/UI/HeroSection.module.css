@@ -1,0 +1,36 @@
+.hero-section {}
+
+.hero-section__content h2 {
+    line-height: 150%;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+}
+
+.hero-section__content h2 span {
+    line-height: 150%;
+}
+
+.hero-section__image {
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.hero-section__image img {
+    border-radius: 6px;
+    box-shadow: 1px 1px 25px rgba(211, 100, 255, .1);
+    animation: 5s hero-image infinite;
+}
+
+@keyframes hero-image {
+    0% {
+        box-shadow: 2px 2px 25px rgba(211, 100, 255, 0);
+    }
+
+    50% {
+        box-shadow: 2px 2px 25px rgba(211, 100, 255, .2);
+    }
+
+    100% {
+        box-shadow: 2px 2px 25px rgba(211, 100, 255, 0);
+    }
+}

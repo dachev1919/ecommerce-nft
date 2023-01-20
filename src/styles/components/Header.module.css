@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    height: auto;
+    line-height: 150%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    padding: .5rem 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+}
+
+.nav__item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.nav__item a.active,
+.nav__item a:hover {
+    color: var(--secondary-color);
+}
+
+.nav__mobile-menu {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
