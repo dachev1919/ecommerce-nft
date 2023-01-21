@@ -81,7 +81,7 @@
         top: 0;
         right: 0;
         flex-direction: column;
-        background: #fff;
+        background: var(--bs-body-color);
         width: 320px;
         height: 100%;
         justify-content: center;
@@ -94,7 +94,7 @@
     }
 
     .nav__item a {
-        color: var(--primary-color);
+        color: #fff;
     }
 }
 

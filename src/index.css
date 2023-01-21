@@ -92,6 +92,11 @@ section {
 }
 
 /*duplicate classes*/
+.logo h2,
+.logo span,
+.logo i {
+    color: var(--bs-body-color) !important;
+}
 
 .logo {
     background: linear-gradient(-45deg, #E250E5, #4B50E6, #E250E5, #4B50E6);
@@ -102,8 +107,8 @@ section {
 }
 
 .input-wrapper,
-.form__group textarea,
-.form__group input {
+.form__group,
+.form__group {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -126,6 +131,11 @@ section {
     width: 100%;
 }
 
+textarea.input-primary,
+.form__group textarea {
+    border-radius: 15px!important;
+}
+
 .form__group input:focus-within,
 .form__group textarea:focus-within {
     border-color: var(--secondary-color);
@@ -134,7 +144,7 @@ section {
 .btn {
     transition: all .3s ease;
     border-radius: 50px;
-    padding: .5rem 1rem;
+    padding: .7rem 1.3rem;
     outline: none;
     text-transform: capitalize;
     line-height: 100%;
@@ -180,7 +190,7 @@ section {
 @media screen and (max-width: 1920px) {
     .btn:not(.without__responsive) {
         font-size: calc(0.7rem + (.9 - 0.7) * ((100vw - 20rem) / (120 - 20)));
-        padding: calc(0.3rem + (0.5 - 0.3) * ((100vw - 20rem) / (120 - 20))) calc(.6rem + (1 - .6) * ((100vw - 20rem) / (120 - 20)));
+        padding: calc(0.5rem + (0.7 - 0.5) * ((100vw - 20rem) / (120 - 20))) calc(.7rem + (1.3 - .7) * ((100vw - 20rem) / (120 - 20)));
     }
 
     .btn:not(.without__responsive) i {

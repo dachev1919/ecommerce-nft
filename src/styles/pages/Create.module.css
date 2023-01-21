@@ -1,0 +1,15 @@
+.create__input {
+    border: 1px solid var(--primary-color)!important;
+}
+
+.create label {
+    color: #fff;
+}
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 767px) {
+    .create__item {
+        margin-top: 2rem;
+    }
+}
+/*END RESPONSIVE PART*/

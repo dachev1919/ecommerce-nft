@@ -4,6 +4,7 @@ import LiveAuction from "../components/UI/LiveAuction";
 import SellerSection from "../components/UI/SellerSection";
 import TrendingSection from "../components/UI/TrendingSection";
 import StepSection from "../components/UI/StepSection";
+import { STEP__DATA } from "../assets/data/data";
 
 const Home = () => {
     return (
@@ -16,7 +17,7 @@ const Home = () => {
 
             <TrendingSection />
 
-            <StepSection />
+            <StepSection data={STEP__DATA} />
         </Helmet>
     );
 };

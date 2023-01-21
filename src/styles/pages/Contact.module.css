@@ -1,0 +1,7 @@
+.contact {}
+
+.contact__form {}
+
+.create__input {
+    border: 1px solid var(--primary-color)!important;
+}

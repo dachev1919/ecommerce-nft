@@ -20,7 +20,7 @@
 .hero-section__image img {
     border-radius: 6px;
     box-shadow: 1px 1px 25px rgba(211, 100, 255, .1);
-    animation: 5s hero-image infinite;
+    animation: ease 6s hero-image infinite;
 }
 
 .hero-section__btns {
@@ -60,13 +60,16 @@
 @keyframes hero-image {
     0% {
         box-shadow: 2px 2px 25px rgba(211, 100, 255, 0);
+        transform: translateY(0);
     }
 
     50% {
         box-shadow: 2px 2px 25px rgba(211, 100, 255, .2);
+        transform: translateY(-1rem);
     }
 
     100% {
         box-shadow: 2px 2px 25px rgba(211, 100, 255, 0);
+        transform: translateY(0);
     }
 }

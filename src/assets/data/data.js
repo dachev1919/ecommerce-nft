@@ -24,6 +24,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava01,
     currentBid: 5.89,
+    category: 'art',
   },
 
   {
@@ -34,6 +35,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava02,
     currentBid: 5.09,
+    category: 'music',
   },
 
   {
@@ -44,6 +46,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava03,
     currentBid: 6.89,
+    category: 'domain-name',
   },
 
   {
@@ -54,6 +57,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava04,
     currentBid: 7.89,
+    category: 'virtual-world',
   },
 
   {
@@ -64,6 +68,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava05,
     currentBid: 4.89,
+    category: 'trending-card',
   },
 
   {
@@ -74,6 +79,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava06,
     currentBid: 4.99,
+    category: 'art',
   },
 
   {
@@ -84,6 +90,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava03,
     currentBid: 5.89,
+    category: 'music',
   },
 
   {
@@ -94,6 +101,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava04,
     currentBid: 5.89,
+    category: 'domain-name',
   },
 
   {
@@ -104,6 +112,7 @@ export const NFT__DATA = [
     creator: "Trista Francis",
     creatorImg: ava05,
     currentBid: 5.89,
+    category: 'virtual-world',
   },
 ];
 
@@ -252,3 +261,57 @@ export const SELLER__DATA = [
     twitUrl: "#",
   },
 ];
+
+export const STEP__DATA = [
+  {
+    id: 1,
+    title: 'Setup your wallet',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-wallet-line'
+  },
+  {
+    id: 2,
+    title: 'Create your collection',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-layout-masonry-line'
+  },
+  {
+    id: 3,
+    title: 'Add your NFTs',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-image-line'
+  },
+  {
+    id: 4,
+    title: 'List them for sale',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-list-check'
+  },
+];
+
+export const WALLET__DATA = [
+  {
+    id: 1,
+    title: 'Bitcoin',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-bit-coin-line'
+  },
+  {
+    id: 2,
+    title: 'Coinbase',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-coin-line'
+  },
+  {
+    id: 3,
+    title: 'Metamask',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-money-cny-circle-line'
+  },
+  {
+    id: 4,
+    title: 'Copper',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque consequatur ducimus.',
+    icon: 'ri-copper-coin-line'
+  },
+]
