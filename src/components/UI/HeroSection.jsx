@@ -17,7 +17,7 @@ const HeroSection = () => {
                                 Amet deleniti id incidunt quam? Amet aperiam cumque necessitatibus
                                 nostrum saepe vero?
                             </p>
-                            <div className="d-flex align-items-center gap-4 mt-5">
+                            <div className={`${styles['hero-section__btns']} d-flex align-items-center gap-4`}>
                                 <Link to="/ecommerce-nft/market">
                                     <button className="btn btn__primary without__responsive"><i className="ri-rocket-line"/>Explore</button>
                                 </Link>

@@ -23,6 +23,40 @@
     animation: 5s hero-image infinite;
 }
 
+.hero-section__btns {
+    margin-top: 3rem;
+}
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 1199px) {
+    .hero-section__content h2 {
+        line-height: 110%;
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hero-section__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section__content p {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-section__image {
+        width: 100%;
+        max-width: 100%;
+        margin: 2rem 0 0 0;
+    }
+    .hero-section__btns {
+        margin-top: 1.5rem;
+    }
+}
+/*END RESPONSIVE PART*/
+
 @keyframes hero-image {
     0% {
         box-shadow: 2px 2px 25px rgba(211, 100, 255, 0);

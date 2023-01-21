@@ -24,20 +24,25 @@ const NAV__LINKS = [
 
 const Header = () => {
     const headerRef = useRef();
+    const menuRef = useRef(null);
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
-           if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-               headerRef.current.classList.add(styles['header__shrink']);
-           } else {
-               headerRef.current.classList.remove(styles['header__shrink']);
-           }
+        window.addEventListener("scroll", () => {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                headerRef.current.classList.add(styles["header__shrink"]);
+            } else {
+                headerRef.current.classList.remove(styles["header__shrink"]);
+            }
         });
 
         return () => {
-            window.removeEventListener('scroll', () => {})
+            window.removeEventListener("scroll", () => {});
         };
     }, []);
+
+    const menuToggleHandler = () => menuRef.current.classList.toggle(styles['show']);
+
+
 
     return (
         <header ref={ headerRef } className={ styles.header }>
@@ -45,7 +50,7 @@ const Header = () => {
                 <div className={ styles.nav }>
                     <div className="logo">
                         <Link to="/ecommerce-nft/">
-                            <h2 className="d-flex gap-2 align-items-center">
+                            <h2 className="m-0 d-flex gap-2 align-items-center">
                             <span>
                                 <i className="ri-fire-fill"/>
                             </span>
@@ -53,7 +58,7 @@ const Header = () => {
                             </h2>
                         </Link>
                     </div>
-                    <div className={ styles["nav__menu"] }>
+                    <div ref={ menuRef } className={ styles["nav__menu"] } onClick={menuToggleHandler}>
                         <ul className={ styles["nav__list"] }>
                             {
                                 NAV__LINKS.map((link, index) => (
@@ -73,7 +78,7 @@ const Header = () => {
                                 Connect Wallet
                             </button>
                         </Link>
-                        <span className={ styles["nav__mobile-menu"] }>
+                        <span className={ styles["nav__mobile-menu"] } onClick={menuToggleHandler}>
                             <i className="ri-menu-line"></i>
                         </span>
                     </div>

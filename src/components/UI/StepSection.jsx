@@ -39,7 +39,7 @@ const StepSection = () => {
                     </Col>
                     {
                         STEP__DATA.map((item) => (
-                            <Col key={item.id} lg='3'>
+                            <Col className={styles['step-section__item__wrapper']} key={item.id} lg='3'>
                                 <Link to={'/ecommerce-nft/wallet'}>
                                     <div className={styles['single-step__item']}>
                                         <span><i className={ item.icon } /></span>

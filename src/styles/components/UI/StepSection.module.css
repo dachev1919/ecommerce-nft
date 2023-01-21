@@ -44,3 +44,23 @@
     line-height: 200%;
     margin: 0;
 }
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 1199px) {
+    .single-step__item {
+        padding: 1rem .5rem;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .step-section__item__wrapper {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .step-section h3 {
+        text-align: center;
+    }
+}
+/*END RESPONSIVE PART*/

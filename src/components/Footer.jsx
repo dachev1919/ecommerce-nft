@@ -65,10 +65,10 @@ const Footer = () => {
         <footer className={styles.footer}>
             <Container>
                 <Row>
-                    <Col lg='3' sm='6'>
+                    <Col lg='3' sm='6' className={styles['footer__col']}>
                         <div className='logo'>
                             <Link to="/ecommerce-nft/">
-                                <h2 className="d-flex gap-2 align-items-center">
+                                <h2 className="m-0 d-flex gap-2 align-items-center">
                             <span>
                                 <i className="ri-fire-fill"/>
                             </span>
@@ -82,7 +82,7 @@ const Footer = () => {
                             eos fugit officia similique ut!
                         </p>
                     </Col>
-                    <Col lg='2' md='3' sm='6'>
+                    <Col lg='2' md='3' sm='6' className={styles['footer__col']}>
                         <ListGroup className={styles['footer__list-group']}>
                             <ListGroupItemHeading className={styles['footer__title']}>My Account</ListGroupItemHeading>
                             {
@@ -95,7 +95,7 @@ const Footer = () => {
                             }
                         </ListGroup>
                     </Col>
-                    <Col lg='2' md='3' sm='6'>
+                    <Col lg='2' md='3' sm='6' className={styles['footer__col']}>
                         <ListGroup className={styles['footer__list-group']}>
                             <ListGroupItemHeading className={styles['footer__title']}>Resources</ListGroupItemHeading>
                             {
@@ -108,7 +108,7 @@ const Footer = () => {
                             }
                         </ListGroup>
                     </Col>
-                    <Col lg='2' md='3' sm='6'>
+                    <Col lg='2' md='3' sm='6' className={styles['footer__col']}>
                         <ListGroup className={styles['footer__list-group']}>
                             <ListGroupItemHeading className={styles['footer__title']}>Company</ListGroupItemHeading>
                             {
@@ -121,10 +121,10 @@ const Footer = () => {
                             }
                         </ListGroup>
                     </Col>
-                    <Col lg='2' sm='6'>
+                    <Col lg='2' md='9' className={`${styles['footer__col']} col-12`}>
                         <h5 className={styles['footer__title']}>Newsletter</h5>
                         <form className={styles.newsletter} onSubmit={(e) => e.preventDefault()}>
-                            <input className={styles['newsletter__input']} type='text' placeholder='Email'></input>
+                            <input className='input-primary' type='text' placeholder='Email'></input>
                             <button className={styles['newsletter__button']}><i className='ri-search-line' /></button>
                         </form>
                         <div className={`${styles['social-links']} d-flex gap-3 align-items-center`}>

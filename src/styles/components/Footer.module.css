@@ -1,6 +1,6 @@
 .footer {
     background: #0a0a0d;
-    padding: 60px 0;
+    padding: 3.5rem 0;
 }
 
 .footer__title {
@@ -31,17 +31,8 @@
     margin-bottom: 20px;
 }
 
-.newsletter__input {
-    color: #fff;
-    background: transparent;
-    border: none;
-    font-weight: 300;
-    line-height: 100%;
-    font-size: .8rem;
-    outline: none!important;
-    padding: .2rem 0 .2rem 1rem;
-    max-width: 80%;
-    width: 80%;
+.footer__col input {
+    padding-right: 0;
 }
 
 .newsletter__button {
@@ -75,3 +66,14 @@
     opacity: 85%;
     letter-spacing: .1rem;
 }
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 991px) {
+    .footer {
+        padding: 2rem 0;
+    }
+    .footer__col {
+        margin-bottom: 1rem;
+    }
+}
+/*END RESPONSIVE PART*/

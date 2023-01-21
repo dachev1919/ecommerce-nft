@@ -14,7 +14,7 @@ const SellerSection = () => {
                     </Col>
                     {
                         SELLER__DATA.slice(0, 6).map(({ id, sellerName, sellerImg, currentBid }) => (
-                            <Col key={ id } lg="2" sm="4" md="3" className="mb-3 col-6">
+                            <Col key={ id } xl='2' lg="4" md="6" className="mb-3 col-6">
                                 <div className={ `${ styles["single-seller__card"] } d-flex align-items-center gap-3` }>
                                     <div className={ styles["single-seller__image"] }>
                                         <img src={ sellerImg } alt=""/>

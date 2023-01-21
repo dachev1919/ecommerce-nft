@@ -11,11 +11,13 @@
 .nft-card__image img {
     border-radius: 6px;
     box-shadow: 0 0 20px rgba(2,2,58,.3);
-    transition: box-shadow .3s ease;
+    transition: box-shadow .3s ease, transform .5s cubic-bezier(.68,-0.55,.27,1.55);;
+    transform: none;
 }
 
 .nft-card__image:hover img {
     box-shadow: 0 0 5px rgba(2,2,58,.3);
+    transform: translateY(-5px);
 }
 
 .nft-card__content {}
@@ -60,3 +62,16 @@
 .creator-info__author {}
 
 .creator-info__price {}
+
+/*RESPONSIVE PART*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .creator-info p,
+    .creator-info h6 {
+        font-size: .8rem;
+    }
+
+    .creator-info__btns {
+        font-size: .8rem;
+    }
+}
+/*END RESPONSIVE PART*/
