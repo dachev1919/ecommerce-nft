@@ -123,7 +123,7 @@ const Footer = () => {
                     </Col>
                     <Col lg='2' md='9' className={`${styles['footer__col']} col-12`}>
                         <h5 className={styles['footer__title']}>Newsletter</h5>
-                        <form className={styles.newsletter} onSubmit={(e) => e.preventDefault()}>
+                        <form className='input-wrapper' onSubmit={(e) => e.preventDefault()}>
                             <input className='input-primary' type='text' placeholder='Email'></input>
                             <button className={styles['newsletter__button']}><i className='ri-search-line' /></button>
                         </form>

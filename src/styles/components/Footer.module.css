@@ -21,15 +21,6 @@
     color: var(--secondary-color);
 }
 
-.newsletter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border: 1px solid var(--primary-color);
-    border-radius: 50px;
-    margin-bottom: 20px;
-}
 
 .footer__col input {
     padding-right: 0;

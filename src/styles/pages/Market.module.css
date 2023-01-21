@@ -1,0 +1,9 @@
+.filters select {
+    cursor: pointer;
+    background: var(--background-color);
+    border-radius: 100%;
+}
+
+.filters option {
+    position: relative;
+}

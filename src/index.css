@@ -4,6 +4,7 @@
 :root {
     --primary-color: rgb(75, 80, 230);
     --secondary-color: rgb(226, 80, 229);
+    --secondary-hover-color: rgb(109, 53, 110);
     --background-color: rgb(20, 20, 31);
     --secondary-background-color: rgb(20, 20, 31, .5);
     --bs-body-color: rgb(33, 34, 69);
@@ -151,7 +152,7 @@ section {
 }
 
 .btn.btn__primary {
-    background: transparent;
+    background: var(--primary-color);
     color: #fff;
     border-color: var(--primary-color);
 }
@@ -164,11 +165,12 @@ section {
 }
 
 .btn.btn__secondary {
-    background: transparent;
-    color: var(--secondary-color);
+    background: var(--secondary-hover-color);;
+    color: #fff;
     border-color: var(--secondary-color);
 }
 
+.btn.btn__primary:active,
 .btn.btn__secondary:hover {
     border-color: var(--secondary-color);
     background: var(--secondary-color);

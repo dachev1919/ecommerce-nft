@@ -1,0 +1,7 @@
+.common-section {
+    background: var(--bs-body-color) url("../../../assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0;
+}

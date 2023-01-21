@@ -17,12 +17,17 @@
 .modal {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: calc(50% - 1rem);
     transform: translate(-50%, -50%);
-    background: #343444;
+    background: var(--bs-body-color);
     border-radius: 6px;
     padding: 2rem;
     z-index: 99999999;
+    width: 500px;
+    max-width: calc(100% - 1rem);
+    margin: 0 1rem;
+    max-height: 100vh;
+    overflow: auto;
 }
 
 .modal__input {}
@@ -39,3 +44,24 @@
 .modal__wrapper .close:hover {
     opacity: .85;
 }
+
+.modal__money {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.modal__btn {
+    margin: 0 auto;
+}
+
+/*RESPONSIVE PART*/
+@media screen and (max-width: 575px) {
+    .modal h6,
+    .modal p {
+        font-size: .8rem;
+    }
+    .modal__money {
+        font-size: 1rem;
+    }
+}
+/*END RESPONSIVE PART*/
